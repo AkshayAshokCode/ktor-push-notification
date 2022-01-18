@@ -14,7 +14,7 @@ class OneSignalServiceImpl(
             client.post<String>{
                 url(OneSignalService.NOTIFICATIONS)
                 contentType(ContentType.Application.Json)
-                header("Autherization","Basic $apiKey")
+                header("Authorization","Basic $apiKey")
                 body=notification
             }
             true
